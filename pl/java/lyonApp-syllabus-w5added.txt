@@ -1,0 +1,100 @@
+/**************************************************
+*
+* CODAPPS: Coding mobile apps for entrepreneurs
+*
+***************************************************/
+    WEEK 1
+3 hours to complete
+1. Installation of useful tools for the course
+
+
+    WEEK 2
+2. How to add text, pics, links and extra screens to your app
+
+
+5 readings
+summary of the lesson in pdf 10m
+summary of the lesson in pdf 10m
+summary of the lesson in pdf 10m
+summary of the lesson in pdf 10m
+summary of the lesson in pdf 10m
+3 practice exercises
+Graded quiz 2m
+Graded quiz 2m
+Graded quiz 6m
+
+    WEEK 3
+3. Designing your app
+
+Here we learn how to control and change the appearance of our app to design exactly what we want
+2 videos (Total 27 min), 3 readings, 2 quizzes
+2 videos
+
+31 Video - How to arrange things where we want on a screen: layouts 13m
+32 Video - How to style any component (Labels, Buttons, etc.) 13m
+
+3 readings
+Careful! New way to use layout! 10m
+summary of the lesson in pdf 10m
+summary of the lesson in pdf 10m
+2 practice exercises
+Graded quiz6m
+Graded quiz6m
+
+
+
+4 readings
+Advice to make your app smaller 10m
+summary of the lesson in pdf 10m
+Summary in pdf for publishing an app for Android 10m
+How to publish the updated version of an app 10m
+1 practice exercise
+Graded quiz 8m
+
+
+
+
+Graded: Graded quiz
+Graded: Graded quiz
+Graded: Graded quiz
+Graded: Graded quiz
+
+
+* 61 Video: Video - JSON: a useful way to format text
+* 62 Video: Video: creating the screens of the ROOOAR app
+Rea* ing: each line of code commented and explained
+* 63 Video: Video How to send a ROAR from the app to the Internet
+
+Reading: check the code of the lesson on Github
+Show less
+Graded: Graded quiz
+Graded: Graded quiz
+
+WEEK 7
+7. Creating successful apps: receive ROARS and add useful functions to your app
+
+Here we learn how receive information from the Internet and use it in our app, and how to add a couple of functions to make our app more powerful
+2 videos, 4 readings
+Reading: Before all: we need to enable JSON objects in our app
+Reading: each line of code commented and explained
+	71 Video: Video - receiving ROARS from the Internet and showing them in the app
+Reading: check the code of the lesson on Github
+	72 Video: Video - How to add Google Analytics to your app
+Reading: How to make an app multi languages?
+Show less
+
+WEEK 8
+8. Wrap up and next steps
+
+This is the final module of the course, we leave you with good pieces of advice to continue advancing your projects
+4 videos, 5 readings
+	81 Video: Video - introduction to module 8
+	82 Video: Video - Sources of information
+	83 Reading: For French speakers
+Reading: slide of the lesson
+Reading: slide of the lesson
+	84 Video: Video - A panorama of technos for mobile app development
+Reading: What programming language did we use in CODAPPS? + important precisions on the vocabulary.
+Video: Video - Resources to conduct a project in mobile app development
+Reading: slide of the lesson
+Show less

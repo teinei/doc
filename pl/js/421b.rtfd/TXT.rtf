@@ -1,0 +1,238 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Monaco;\f2\fmodern\fcharset0 Courier;
+}
+{\colortbl;\red255\green255\blue255;\red242\green242\blue242;\red0\green0\blue0;\red0\green0\blue0;
+}
+{\*\expandedcolortbl;;\csgray\c95825;\csgray\c0\c85000;\cssrgb\c0\c0\c0;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww19800\viewh12920\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs44 \cf0 //\
+throw an error\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs32 \cf2 \cb3 \CocoaLigature0 zuids-MacBook-Pro:03-421-mongo zuid$ node index.js\
+internal/modules/cjs/loader.js:583\
+    throw err;\
+    ^\
+\
+Error: Cannot find module 'bson'\
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:581:15)\
+    at Function.Module._load (internal/modules/cjs/loader.js:507:25)\
+    at Module.require (internal/modules/cjs/loader.js:637:17)\
+    at require (internal/modules/cjs/helpers.js:22:18)\
+    at Object.<anonymous> (/Users/zuid/Library/Mobile Documents/com~apple~CloudDocs/Zuid Cloud/penn-web-2.5.0.421a/penn-web-videos/Week 4 Building Scalable Web Apps with Server-Side JavaScript/42 Databases and Web Applications/421 Introduction to MongoDB - Video 4.6/421src/03-421-mongo/node_modules/mongodb-core/index.js:3:12)\
+    at Module._compile (internal/modules/cjs/loader.js:689:30)\
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)\
+    at Module.load (internal/modules/cjs/loader.js:599:32)\
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)\
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)\
+zuids-MacBook-Pro:03-421-mongo zuid$ \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs44 \cf0 \cb1 \CocoaLigature1 //\
+$ npm install cjs\
+$ npm install cjs-module\
+// copy /cjs /cjs-module to /modules\
+// same errors\
+cp /bson to /module\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs32 \cf2 \cb3 \CocoaLigature0 zuids-MacBook-Pro:03-421-mongo zuid$ node index.js\
+internal/modules/cjs/loader.js:583\
+    throw err;\
+    ^\
+\
+Error: Cannot find module 'require_optional'\
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:581:15)\
+    at Function.Module._load (internal/modules/cjs/loader.js:507:25)\
+    at Module.require (internal/modules/cjs/loader.js:637:17)\
+    at require (internal/modules/cjs/helpers.js:22:18)\
+    at Object.<anonymous> (/Users/zuid/Library/Mobile Documents/com~apple~CloudDocs/Zuid Cloud/penn-web-2.5.0.421a/penn-web-videos/Week 4 Building Scalable Web Apps with Server-Side JavaScript/42 Databases and Web Applications/421 Introduction to MongoDB - Video 4.6/421src/03-421-mongo/node_modules/mongodb-core/index.js:4:24)\
+    at Module._compile (internal/modules/cjs/loader.js:689:30)\
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)\
+    at Module.load (internal/modules/cjs/loader.js:599:32)\
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)\
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)\
+zuids-MacBook-Pro:03-421-mongo zuid$ \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs44 \cf0 \cb1 \CocoaLigature1 // cp /require_optional\
+// new error\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs32 \cf2 \cb3 \CocoaLigature0 internal/modules/cjs/loader.js:583\
+    throw err;\
+    ^\
+\
+Error: Cannot find module 'resolve-from'\
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:581:15)\
+    at Function.Module._load (internal/modules/cjs/loader.js:507:25)\
+    at Module.require (internal/modules/cjs/loader.js:637:17)\
+    at require (internal/modules/cjs/helpers.js:22:18)\
+    at Object.<anonymous> (/Users/zuid/Library/Mobile Documents/com~apple~CloudDocs/Zuid Cloud/penn-web-2.5.0.421a/penn-web-videos/Week 4 Building Scalable Web Apps with Server-Side JavaScript/42 Databases and Web Applications/421 Introduction to MongoDB - Video 4.6/421src/03-421-mongo/node_modules/require_optional/index.js:4:17)\
+    at Module._compile (internal/modules/cjs/loader.js:689:30)\
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)\
+    at Module.load (internal/modules/cjs/loader.js:599:32)\
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)\
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)\
+zuids-MacBook-Pro:03-421-mongo zuid$ \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs44 \cf0 \cb1 \CocoaLigature1 // cp /resove-from /semver /sliced\
+just copy everthing from /mongoose-save/node-modules\
+// deprecated, depreciate, old fashioned, out of date\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs32 \cf2 \cb3 \CocoaLigature0 zuids-MacBook-Pro:03-421-mongo zuid$ node index.js\
+(node:9284) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option \{ useNewUrlParser: true \} to MongoClient.connect.\
+Listening on port 3000\
+(node:9284) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs44 \cf0 \cb1 \CocoaLigature1 //\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs24 \cf0 {{\NeXTGraphic Pasted Graphic.tiff \width12420 \height8900 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}
+\fs44 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 //\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs24 \cf0 {{\NeXTGraphic Pasted Graphic 1.tiff \width11420 \height2660 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs44 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 //\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs24 \cf0 {{\NeXTGraphic Pasted Graphic 2.tiff \width12120 \height1420 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs44 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 //\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs24 \cf0 {{\NeXTGraphic Pasted Graphic 3.tiff \width13100 \height8700 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs44 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 //\
+copy y paste /files to /public\
+//\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs24 \cf0 {{\NeXTGraphic Pasted Graphic 4.tiff \width15720 \height5440 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs44 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 //\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs32 \cf2 \cb3 \CocoaLigature0 \
+zuids-MacBook-Pro:03-421-mongo zuid$ node index.js\
+(node:9321) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option \{ useNewUrlParser: true \} to MongoClient.connect.\
+Listening on port 3000\
+(node:9321) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.\
+Error: Could not find the include file "../partials/createNewPersonLink"\
+    at getIncludePath (/Users/zuid/Library/Mobile Documents/com~apple~CloudDocs/Zuid Cloud/penn-web-2.5.0.421a/penn-web-videos/Week 4 Building Scalable Web Apps with Server-Side JavaScript/42 Databases and Web Applications/421 Introduction to MongoDB - Video 4.6/421src/03-421-mongo/node_modules/ejs/lib/ejs.js:162:13)\
+    at includeSource (/Users/zuid/Library/Mobile Documents/com~apple~CloudDocs/Zuid Cloud/penn-web-2.5.0.421a/penn-web-videos/Week 4 Building Scalable Web Apps with Server-Side JavaScript/42 Databases and Web Applications/421 Introduction to MongoDB - Video 4.6/421src/03-421-mongo/node_modules/ejs/lib/ejs.js:306:17)\
+    at /Users/zuid/Library/Mobile Documents/com~apple~CloudDocs/Zuid Cloud/penn-web-2.5.0.421a/penn-web-videos/Week 4 Building Scalable Web Apps with Server-Side JavaScript/42 Databases and Web Applications/421 Introduction to MongoDB - Video 4.6/421src/03-421-mongo/node_modules/ejs/lib/ejs.js:702:26\
+    at Array.forEach (<anonymous>)\
+    at Template.generateSource (/Users/zuid/Library/Mobile Documents/com~apple~CloudDocs/Zuid Cloud/penn-web-2.5.0.421a/penn-web-videos/Week 4 Building Scalable Web Apps with Server-Side JavaScript/42 Databases and Web Applications/421 Introduction to MongoDB - Video 4.6/421src/03-421-mongo/node_modules/ejs/lib/ejs.js:678:15)\
+    at Template.compile (/Users/zuid/Library/Mobile Documents/com~apple~CloudDocs/Zuid Cloud/penn-web-2.5.0.421a/penn-web-videos/Week 4 Building Scalable Web Apps with Server-Side JavaScript/42 Databases and Web Applications/421 Introduction to MongoDB - Video 4.6/421src/03-421-mongo/node_modules/ejs/lib/ejs.js:557:12)\
+    at Object.compile (/Users/zuid/Library/Mobile Documents/com~apple~CloudDocs/Zuid Cloud/penn-web-2.5.0.421a/penn-web-videos/Week 4 Building Scalable Web Apps with Server-Side JavaScript/42 Databases and Web Applications/421 Introduction to MongoDB - Video 4.6/421src/03-421-mongo/node_modules/ejs/lib/ejs.js:389:16)\
+    at handleCache (/Users/zuid/Library/Mobile Documents/com~apple~CloudDocs/Zuid Cloud/penn-web-2.5.0.421a/penn-web-videos/Week 4 Building Scalable Web Apps with Server-Side JavaScript/42 Databases and Web Applications/421 Introduction to MongoDB - Video 4.6/421src/03-421-mongo/node_modules/ejs/lib/ejs.js:212:18)\
+    at tryHandleCache (/Users/zuid/Library/Mobile Documents/com~apple~CloudDocs/Zuid Cloud/penn-web-2.5.0.421a/penn-web-videos/Week 4 Building Scalable Web Apps with Server-Side JavaScript/42 Databases and Web Applications/421 Introduction to MongoDB - Video 4.6/421src/03-421-mongo/node_modules/ejs/lib/ejs.js:251:16)\
+    at View.exports.renderFile [as engine] (/Users/zuid/Library/Mobile Documents/com~apple~CloudDocs/Zuid Cloud/penn-web-2.5.0.421a/penn-web-videos/Week 4 Building Scalable Web Apps with Server-Side JavaScript/42 Databases and Web Applications/421 Introduction to MongoDB - Video 4.6/421src/03-421-mongo/node_modules/ejs/lib/ejs.js:482:10)\
+    at View.render (/Users/zuid/Library/Mobile Documents/com~apple~CloudDocs/Zuid Cloud/penn-web-2.5.0.421a/penn-web-videos/Week 4 Building Scalable Web Apps with Server-Side JavaScript/42 Databases and Web Applications/421 Introduction to MongoDB - Video 4.6/421src/03-421-mongo/node_modules/express/lib/view.js:135:8)\
+    at tryRender (/Users/zuid/Library/Mobile Documents/com~apple~CloudDocs/Zuid Cloud/penn-web-2.5.0.421a/penn-web-videos/Week 4 Building Scalable Web Apps with Server-Side JavaScript/42 Databases and Web Applications/421 Introduction to MongoDB - Video 4.6/421src/03-421-mongo/node_modules/express/lib/application.js:640:10)\
+    at Function.render (/Users/zuid/Library/Mobile Documents/com~apple~CloudDocs/Zuid Cloud/penn-web-2.5.0.421a/penn-web-videos/Week 4 Building Scalable Web Apps with Server-Side JavaScript/42 Databases and Web Applications/421 Introduction to MongoDB - Video 4.6/421src/03-421-mongo/node_modules/express/lib/application.js:592:3)\
+    at ServerResponse.render (/Users/zuid/Library/Mobile Documents/com~apple~CloudDocs/Zuid Cloud/penn-web-2.5.0.421a/penn-web-videos/Week 4 Building Scalable Web Apps with Server-Side JavaScript/42 Databases and Web Applications/421 Introduction to MongoDB - Video 4.6/421src/03-421-mongo/node_modules/express/lib/response.js:1008:7)\
+    at newPerson.save (/Users/zuid/Library/Mobile Documents/com~apple~CloudDocs/Zuid Cloud/penn-web-2.5.0.421a/penn-web-videos/Week 4 Building Scalable Web Apps with Server-Side JavaScript/42 Databases and Web Applications/421 Introduction to MongoDB - Video 4.6/421src/03-421-mongo/index.js:23:11)\
+    at /Users/zuid/Library/Mobile Documents/com~apple~CloudDocs/Zuid Cloud/penn-web-2.5.0.421a/penn-web-videos/Week 4 Building Scalable Web Apps with Server-Side JavaScript/42 Databases and Web Applications/421 Introduction to MongoDB - Video 4.6/421src/03-421-mongo/node_modules/mongoose/lib/model.js:4641:16\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs44 \cf0 \cb1 \CocoaLigature1 //\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs24 \cf0 {{\NeXTGraphic Pasted Graphic 5.tiff \width9840 \height3160 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs44 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 //\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f2\fs24 \cf4 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 SyntaxError: Invalid or unexpected token in /Users/zuid/Library/Mobile Documents/com~apple~CloudDocs/Zuid Cloud/penn-web-2.5.0.421a/penn-web-videos/Week 4 Building Scalable Web Apps with Server-Side JavaScript/42 Databases and Web Applications/421 Introduction to MongoDB - Video 4.6/421src/03-421-mongo/views/created.ejs while compiling ejs\
+\
+If the above error is not helpful, you may want to try EJS-Lint:\
+https://github.com/RyanZim/EJS-Lint\
+Or, if you meant to create an async function, pass async: true as an option.\
+ \'a0 \'a0at new Function (<anonymous>)\
+ \'a0 \'a0at Template.compile (/Users/zuid/Library/Mobile Documents/com~apple~CloudDocs/Zuid Cloud/penn-web-2.5.0.421a/penn-web-videos/Week 4 Building Scalable Web Apps with Server-Side JavaScript/42 Databases and Web Applications/421 Introduction to MongoDB - Video 4.6/421src/03-421-mongo/node_modules/ejs/lib/ejs.js:618:12)\
+ \'a0 \'a0at Object.compile (/Users/zuid/Library/Mobile Documents/com~apple~CloudDocs/Zuid Cloud/penn-web-2.5.0.421a/penn-web-videos/Week 4 Building Scalable Web Apps with Server-Side JavaScript/42 Databases and Web Applications/421 Introduction to MongoDB - Video 4.6/421src/03-421-mongo/node_modules/ejs/lib/ejs.js:389:16)\
+ \'a0 \'a0at handleCache (/Users/zuid/Library/Mobile Documents/com~apple~CloudDocs/Zuid Cloud/penn-web-2.5.0.421a/penn-web-videos/Week 4 Building Scalable Web Apps with Server-Side JavaScript/42 Databases and Web Applications/421 Introduction to MongoDB - Video 4.6/421src/03-421-mongo/node_modules/ejs/lib/ejs.js:212:18)\
+ \'a0 \'a0at tryHandleCache (/Users/zuid/Library/Mobile Documents/com~apple~CloudDocs/Zuid Cloud/penn-web-2.5.0.421a/penn-web-videos/Week 4 Building Scalable Web Apps with Server-Side JavaScript/42 Databases and Web Applications/421 Introduction to MongoDB - Video 4.6/421src/03-421-mongo/node_modules/ejs/lib/ejs.js:251:16)\
+ \'a0 \'a0at View.exports.renderFile [as engine] (/Users/zuid/Library/Mobile Documents/com~apple~CloudDocs/Zuid Cloud/penn-web-2.5.0.421a/penn-web-videos/Week 4 Building Scalable Web Apps with Server-Side JavaScript/42 Databases and Web Applications/421 Introduction to MongoDB - Video 4.6/421src/03-421-mongo/node_modules/ejs/lib/ejs.js:482:10)\
+ \'a0 \'a0at View.render (/Users/zuid/Library/Mobile Documents/com~apple~CloudDocs/Zuid Cloud/penn-web-2.5.0.421a/penn-web-videos/Week 4 Building Scalable Web Apps with Server-Side JavaScript/42 Databases and Web Applications/421 Introduction to MongoDB - Video 4.6/421src/03-421-mongo/node_modules/express/lib/view.js:135:8)\
+ \'a0 \'a0at tryRender (/Users/zuid/Library/Mobile Documents/com~apple~CloudDocs/Zuid Cloud/penn-web-2.5.0.421a/penn-web-videos/Week 4 Building Scalable Web Apps with Server-Side JavaScript/42 Databases and Web Applications/421 Introduction to MongoDB - Video 4.6/421src/03-421-mongo/node_modules/express/lib/application.js:640:10)\
+ \'a0 \'a0at Function.render (/Users/zuid/Library/Mobile Documents/com~apple~CloudDocs/Zuid Cloud/penn-web-2.5.0.421a/penn-web-videos/Week 4 Building Scalable Web Apps with Server-Side JavaScript/42 Databases and Web Applications/421 Introduction to MongoDB - Video 4.6/421src/03-421-mongo/node_modules/express/lib/application.js:592:3)\
+ \'a0 \'a0at ServerResponse.render (/Users/zuid/Library/Mobile Documents/com~apple~CloudDocs/Zuid Cloud/penn-web-2.5.0.421a/penn-web-videos/Week 4 Building Scalable Web Apps with Server-Side JavaScript/42 Databases and Web Applications/421 Introduction to MongoDB - Video 4.6/421src/03-421-mongo/node_modules/express/lib/response.js:1008:7)\
+ \'a0 \'a0at newPerson.save (/Users/zuid/Library/Mobile Documents/com~apple~CloudDocs/Zuid Cloud/penn-web-2.5.0.421a/penn-web-videos/Week 4 Building Scalable Web Apps with Server-Side JavaScript/42 Databases and Web Applications/421 Introduction to MongoDB - Video 4.6/421src/03-421-mongo/index.js:23:11)\
+ \'a0 \'a0at /Users/zuid/Library/Mobile Documents/com~apple~CloudDocs/Zuid Cloud/penn-web-2.5.0.421a/penn-web-videos/Week 4 Building Scalable Web Apps with Server-Side JavaScript/42 Databases and Web Applications/421 Introduction to MongoDB - Video 4.6/421src/03-421-mongo/node_modules/mongoose/lib/model.js:4641:16\
+ \'a0 \'a0at /Users/zuid/Library/Mobile Documents/com~apple~CloudDocs/Zuid Cloud/penn-web-2.5.0.421a/penn-web-videos/Week 4 Building Scalable Web Apps with Server-Side JavaScript/42 Databases and Web Applications/421 Introduction to MongoDB - Video 4.6/421src/03-421-mongo/node_modules/mongoose/lib/utils.js:255:16\
+ \'a0 \'a0at model.$__save.error (/Users/zuid/Library/Mobile Documents/com~apple~CloudDocs/Zuid Cloud/penn-web-2.5.0.421a/penn-web-videos/Week 4 Building Scalable Web Apps with Server-Side JavaScript/42 Databases and Web Applications/421 Introduction to MongoDB - Video 4.6/421src/03-421-mongo/node_modules/mongoose/lib/model.js:468:7)\
+ \'a0 \'a0at /Users/zuid/Library/Mobile Documents/com~apple~CloudDocs/Zuid Cloud/penn-web-2.5.0.421a/penn-web-videos/Week 4 Building Scalable Web Apps with Server-Side JavaScript/42 Databases and Web Applications/421 Introduction to MongoDB - Video 4.6/421src/03-421-mongo/node_modules/kareem/index.js:315:21\
+ \'a0 \'a0at next (/Users/zuid/Library/Mobile Documents/com~apple~CloudDocs/Zuid Cloud/penn-web-2.5.0.421a/penn-web-videos/Week 4 Building Scalable Web Apps with Server-Side JavaScript/42 Databases and Web Applications/421 Introduction to MongoDB - Video 4.6/421src/03-421-mongo/node_modules/kareem/index.js:209:27)
+\f0\fs44 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 //\
+//\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f2\fs24 \cf4 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 SyntaxError: Invalid or unexpected token in /Users/zuid/Library/Mobile Documents/com~apple~CloudDocs/Zuid Cloud/penn-web-2.5.0.421a/penn-web-videos/Week 4 Building Scalable Web Apps with Server-Side JavaScript/42 Databases and Web Applications/422 Querying data in MongoDB - Video 4.7/00-422-mongo/views/created.ejs while compiling ejs\
+\
+If the above error is not helpful, you may want to try EJS-Lint:\
+https://github.com/RyanZim/EJS-Lint\
+Or, if you meant to create an async function, pass async: true as an option.\
+ \'a0 \'a0at new Function (<anonymous>)\
+ \'a0 \'a0at Template.compile (/Users/zuid/Library/Mobile Documents/com~apple~CloudDocs/Zuid Cloud/penn-web-2.5.0.421a/penn-web-videos/Week 4 Building Scalable Web Apps with Server-Side JavaScript/42 Databases and Web Applications/422 Querying data in MongoDB - Video 4.7/00-422-mongo/node_modules/ejs/lib/ejs.js:618:12)\
+ \'a0 \'a0at Object.compile (/Users/zuid/Library/Mobile Documents/com~apple~CloudDocs/Zuid Cloud/penn-web-2.5.0.421a/penn-web-videos/Week 4 Building Scalable Web Apps with Server-Side JavaScript/42 Databases and Web Applications/422 Querying data in MongoDB - Video 4.7/00-422-mongo/node_modules/ejs/lib/ejs.js:389:16)\
+ \'a0 \'a0at handleCache (/Users/zuid/Library/Mobile Documents/com~apple~CloudDocs/Zuid Cloud/penn-web-2.5.0.421a/penn-web-videos/Week 4 Building Scalable Web Apps with Server-Side JavaScript/42 Databases and Web Applications/422 Querying data in MongoDB - Video 4.7/00-422-mongo/node_modules/ejs/lib/ejs.js:212:18)\
+ \'a0 \'a0at tryHandleCache (/Users/zuid/Library/Mobile Documents/com~apple~CloudDocs/Zuid Cloud/penn-web-2.5.0.421a/penn-web-videos/Week 4 Building Scalable Web Apps with Server-Side JavaScript/42 Databases and Web Applications/422 Querying data in MongoDB - Video 4.7/00-422-mongo/node_modules/ejs/lib/ejs.js:251:16)\
+ \'a0 \'a0at View.exports.renderFile [as engine] (/Users/zuid/Library/Mobile Documents/com~apple~CloudDocs/Zuid Cloud/penn-web-2.5.0.421a/penn-web-videos/Week 4 Building Scalable Web Apps with Server-Side JavaScript/42 Databases and Web Applications/422 Querying data in MongoDB - Video 4.7/00-422-mongo/node_modules/ejs/lib/ejs.js:482:10)\
+ \'a0 \'a0at View.render (/Users/zuid/Library/Mobile Documents/com~apple~CloudDocs/Zuid Cloud/penn-web-2.5.0.421a/penn-web-videos/Week 4 Building Scalable Web Apps with Server-Side JavaScript/42 Databases and Web Applications/422 Querying data in MongoDB - Video 4.7/00-422-mongo/node_modules/express/lib/view.js:135:8)\
+ \'a0 \'a0at tryRender (/Users/zuid/Library/Mobile Documents/com~apple~CloudDocs/Zuid Cloud/penn-web-2.5.0.421a/penn-web-videos/Week 4 Building Scalable Web Apps with Server-Side JavaScript/42 Databases and Web Applications/422 Querying data in MongoDB - Video 4.7/00-422-mongo/node_modules/express/lib/application.js:640:10)\
+ \'a0 \'a0at Function.render (/Users/zuid/Library/Mobile Documents/com~apple~CloudDocs/Zuid Cloud/penn-web-2.5.0.421a/penn-web-videos/Week 4 Building Scalable Web Apps with Server-Side JavaScript/42 Databases and Web Applications/422 Querying data in MongoDB - Video 4.7/00-422-mongo/node_modules/express/lib/application.js:592:3)\
+ \'a0 \'a0at ServerResponse.render (/Users/zuid/Library/Mobile Documents/com~apple~CloudDocs/Zuid Cloud/penn-web-2.5.0.421a/penn-web-videos/Week 4 Building Scalable Web Apps with Server-Side JavaScript/42 Databases and Web Applications/422 Querying data in MongoDB - Video 4.7/00-422-mongo/node_modules/express/lib/response.js:1008:7)\
+ \'a0 \'a0at newPerson.save (/Users/zuid/Library/Mobile Documents/com~apple~CloudDocs/Zuid Cloud/penn-web-2.5.0.421a/penn-web-videos/Week 4 Building Scalable Web Apps with Server-Side JavaScript/42 Databases and Web Applications/422 Querying data in MongoDB - Video 4.7/00-422-mongo/index.js:25:11)\
+ \'a0 \'a0at /Users/zuid/Library/Mobile Documents/com~apple~CloudDocs/Zuid Cloud/penn-web-2.5.0.421a/penn-web-videos/Week 4 Building Scalable Web Apps with Server-Side JavaScript/42 Databases and Web Applications/422 Querying data in MongoDB - Video 4.7/00-422-mongo/node_modules/mongoose/lib/model.js:4641:16\
+ \'a0 \'a0at /Users/zuid/Library/Mobile Documents/com~apple~CloudDocs/Zuid Cloud/penn-web-2.5.0.421a/penn-web-videos/Week 4 Building Scalable Web Apps with Server-Side JavaScript/42 Databases and Web Applications/422 Querying data in MongoDB - Video 4.7/00-422-mongo/node_modules/mongoose/lib/utils.js:255:16\
+ \'a0 \'a0at model.$__save.error (/Users/zuid/Library/Mobile Documents/com~apple~CloudDocs/Zuid Cloud/penn-web-2.5.0.421a/penn-web-videos/Week 4 Building Scalable Web Apps with Server-Side JavaScript/42 Databases and Web Applications/422 Querying data in MongoDB - Video 4.7/00-422-mongo/node_modules/mongoose/lib/model.js:468:7)\
+ \'a0 \'a0at /Users/zuid/Library/Mobile Documents/com~apple~CloudDocs/Zuid Cloud/penn-web-2.5.0.421a/penn-web-videos/Week 4 Building Scalable Web Apps with Server-Side JavaScript/42 Databases and Web Applications/422 Querying data in MongoDB - Video 4.7/00-422-mongo/node_modules/kareem/index.js:315:21\
+ \'a0 \'a0at next (/Users/zuid/Library/Mobile Documents/com~apple~CloudDocs/Zuid Cloud/penn-web-2.5.0.421a/penn-web-videos/Week 4 Building Scalable Web Apps with Server-Side JavaScript/42 Databases and Web Applications/422 Querying data in MongoDB - Video 4.7/00-422-mongo/node_modules/kareem/index.js:209:27)
+\f0\fs44 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 //\
+//\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+}

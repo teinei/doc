@@ -1,0 +1,160 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf200
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Monaco;}
+{\colortbl;\red255\green255\blue255;\red242\green242\blue242;\red0\green0\blue0;\red242\green242\blue242;
+}
+{\*\expandedcolortbl;;\csgray\c95825;\csgray\c0\c85000;\csgenericrgb\c94902\c94902\c94902;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww16200\viewh10180\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs36 \cf0 vagrant box package and install\
+\
+//\
+first, need to create a folder and cd to the folder\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 //\
+import box file\
+//\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs32 \cf2 \cb3 \CocoaLigature0 $ vagrant box add ol75 ol75.box
+\f0\fs36 \cf0 \cb1 \CocoaLigature1 \
+//\
+create Vagrantfile file\
+
+\f1\fs32 \cf2 \cb3 \CocoaLigature0 $ vagrant init oracle-linux-7.5
+\f0\fs36 \cf0 \cb1 \CocoaLigature1 \
+//\
+boot up vagrant\
+
+\f1\fs32 \cf2 \cb3 \CocoaLigature0 $ vagrant up
+\f0\fs36 \cf0 \cb1 \CocoaLigature1 \
+//\
+ssh to virtual machine\
+
+\f1\fs32 \cf2 \cb3 \CocoaLigature0 $ vagrant ssh
+\f0\fs36 \cf0 \cb1 \CocoaLigature1 \
+/\
+note: the virualbox machine name is the same as the folder\'92s name\
+/\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs24 \cf0 {{\NeXTGraphic Pasted Graphic.png \width6900 \height2140 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}
+\fs36 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 /\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs24 \cf0 {{\NeXTGraphic Pasted Graphic 1.png \width2920 \height1480 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs36 \cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 /\
+check linux version\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs32 \cf2 \cb3 \CocoaLigature0 $ cat /etc/os-release
+\f0\fs36 \cf0 \cb1 \CocoaLigature1 \
+/\
+sudo yum update\
+/\
+///\
+/\
+/\
+/\
+/\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+\
+\
+\
+\
+\
+\
+vagrant\
+/vay gr3nt/\
+$ cd /Users/coursera/VirtualBox\\ VMs/vagrant-ubuntu-16.04-johnny-1.0\
+\
+export virtualbox to vagrant .box file\
+$ vagrant package --base vagrant-ubuntu-16.04-johnny-1.0\
+//\
+//\
+install it \
+$ vagrant box add ubuntu package.box\
+/\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 /\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\fs24 \cf0 {{\NeXTGraphic Pasted Graphic 1.tiff \width7780 \height840 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\fs36 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 //\
+mkdir\
+copy vagrant package.box in\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 //\
+$ vagrant box add ubuntu-roma vagrant-ubuntu-16.04-johnny-1.0-package.box\
+$ vagrant init ubuntu-roma\
+//\
+$ vagrant up\
+$ vagrant ssh\
+vagrant@127.0.0.1's password: vagrant\
+//\
+edit Vagrantfile\
+add share folder\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\fs24 \cf0 {{\NeXTGraphic Pasted Graphic 2.tiff \width8560 \height1920 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\fs36 \cf0 \
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\
+  #   apt-get install -y apache2\
+  # SHELL\
+  config.vm.synced_folder ".", "/vagrant"\
+end\
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\
+$ vagrant reload\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\fs24 \cf0 {{\NeXTGraphic Pasted Graphic 3.tiff \width12600 \height1540 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\fs36 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 vagrant up\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs32 \cf1 \cb0 \CocoaLigature0 ==> default: Booting VM...\cf4 \
+\cf1 ==> default: Waiting for machine to boot. This may take a few minutes...\cf4 \
+    default: SSH address: 127.0.0.1:2222\
+    default: SSH username: vagrant\
+    default: SSH auth method: private key\
+    default: Warning: Authentication failure. Retrying...\
+    default: Warning: Authentication failure. Retrying...\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs36 \cf0 \cb1 \CocoaLigature1 $ mkdir .ssh\
+edit Vagrantfile\
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\
+  #config.vm.network "forwarded_port", guest: 8000, host: 8000, host_ip: "127.0.0.1"\
+  #config.vm.network "forwarded_port", guest: 8080, host: 8080, host_ip: "127.0.0.1"\
+  #config.vm.network "forwarded_port", guest: 5000, host: 5000, host_ip: "127.0.0.1"\
+  config.vm.synced_folder ".", "/vagrant"\
+  #config.ssh.private_key_path="./ssh/johnny-ssh"\
+  config.ssh.username = "vagrant"  \
+  config.ssh.password = "vagrant"\
+  config.ssh.insert_key = false\
+end\
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\
+//}
